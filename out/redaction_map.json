@@ -1,0 +1,17 @@
+{
+  "S.C. Ardeal Metal Works S.R.L.": "[COMPANIE_1]",
+  "S.C. Nord Consulting Partners S.A.": "[COMPANIE_2]",
+  "CUI RO12345678": "[CUI_1]",
+  "CUI RO87654321": "[CUI_2]",
+  "J40/1234/2026": "[REG_COM_1]",
+  "J40/9876/2026": "[REG_COM_2]",
+  "RO49AAAA1B31007593840000": "[IBAN_1]",
+  "RO12BBBB1B31007593840001": "[IBAN_2]",
+  "office@ardealmetal.ro": "[EMAIL_1]",
+  "contact@nordconsulting.ro": "[EMAIL_2]",
+  "0722 123 456": "[TELEFON_1]",
+  "0733 987 654": "[TELEFON_2]",
+  "Str. Fabricii nr. 22": "[ADRESA_1]",
+  "Calea Victoriei nr. 155": "[ADRESA_2]",
+  "Bd. Industriei nr. 14": "[ADRESA_3]"
+}

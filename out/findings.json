@@ -1,0 +1,125 @@
+{
+  "source": "data\\sample_contract.docx",
+  "analyzed_on": "2026-11-17",
+  "clauses": 35,
+  "findings_count": 13,
+  "findings": [
+    {
+      "rule": "R01",
+      "title": "Lipsa plafonului de răspundere",
+      "severity": "high",
+      "clause": "document",
+      "quote": "(clauză absentă din document)",
+      "why": "Fără plafon (de regulă valoarea contractului sau 12 luni de onorariu), expunerea este nelimitată și imposibil de asigurat. Un plafon este standard de piață, nu o concesiune.",
+      "fix": "Adaugă: „Răspunderea fiecărei părți este limitată la valoarea totală a contractului, cu excepția dolului și a culpei grave.”"
+    },
+    {
+      "rule": "R02",
+      "title": "Răspundere nelimitată / daune nelimitate",
+      "severity": "high",
+      "clause": "5.1",
+      "quote": "recte si indirecte cauzate Clientului prin neexecutarea obligatiilor, raspundere nelimitata, inclusiv pentru pierderea de profit.",
+      "why": "Sunt incluse daunele indirecte și pierderea de profit fără plafon: o singură întrerupere poate depăși de multe ori valoarea contractului.",
+      "fix": "Elimină daunele indirecte și pierderea de profit; păstrează daunele directe, plafonate."
+    },
+    {
+      "rule": "R04",
+      "title": "Modificare unilaterală a contractului",
+      "severity": "high",
+      "clause": "4.1",
+      "quote": "4.1 Prestatorul poate modifica unilateral tarifele si sfera serviciilor, fara acordul scris al Clientului, prin simpla notificare.",
+      "why": "Prețul și sfera serviciilor devin modificabile de o singură parte: contractul își pierde valoarea de instrument de control al costurilor.",
+      "fix": "Orice modificare prin act adițional semnat de ambele părți."
+    },
+    {
+      "rule": "R08",
+      "title": "Instanțe / lege străină",
+      "severity": "high",
+      "clause": "12.1",
+      "quote": "12.1 Prezentul contract este guvernat de legislatia engleza.",
+      "why": "Costul unui litigiu la Londra depășește de regulă valoarea contractului; protecția legală devine teoretică.",
+      "fix": "Lege română, instanțele de la sediul pârâtului, sau arbitraj la Curtea de Arbitraj Comercială București."
+    },
+    {
+      "rule": "R10",
+      "title": "Date cu caracter personal fără acord de prelucrare",
+      "severity": "high",
+      "clause": "8.1",
+      "quote": "8.1 Partile vor prelucra date cu caracter personal conform legislatiei aplicabile in vigoare.",
+      "why": "Dacă se prelucrează date în numele celeilalte părți, lipsa contractului de împuternicit expune ambele părți la risc de sancțiune.",
+      "fix": "Anexează acordul de prelucrare (art. 28 GDPR) cu scop, durată și categorii de date."
+    },
+    {
+      "rule": "R03",
+      "title": "Prelungire automată fără preaviz",
+      "severity": "medium",
+      "clause": "2.2",
+      "quote": "2.2 La expirare, contractul se prelungeste automat pentru perioade succesive de 12 luni, fara notificare prealabila din partea vreunei parti.",
+      "why": "Te leagă pe termen nelimitat fără să observi: bugetul anului viitor este angajat tacit.",
+      "fix": "Prelungire doar prin act adițional sau cu preaviz scris de 30-60 de zile."
+    },
+    {
+      "rule": "R05",
+      "title": "Termen de plată peste 60 de zile",
+      "severity": "medium",
+      "clause": "3.2",
+      "quote": "3.2 Clientul va plati facturile in termen de 90 de zile de la emiterea facturii.",
+      "why": "Peste 60 de zile rar se justifică între profesioniști; finanțezi practic clientul și crești riscul de neîncasare.",
+      "fix": "Negociază 30 de zile, maximum 45; leagă plata de acceptarea procesului-verbal."
+    },
+    {
+      "rule": "R06",
+      "title": "Penalități de întârziere disproporționat de mari",
+      "severity": "medium",
+      "clause": "6.1",
+      "quote": "6.1 Pentru intarzierea platii, Clientul datoreaza penalitati de intarziere de 1% pe zi din valoarea facturii neachitate.",
+      "why": "Peste ~0,5%/zi se ajunge la 180%/an; instanța poate reduce, dar până atunci este pârghie de presiune.",
+      "fix": "Plafonează penalitățile la 0,1%/zi și la maximum 10% din valoarea facturii."
+    },
+    {
+      "rule": "R07",
+      "title": "Lipsa dreptului de denunțare unilaterală",
+      "severity": "medium",
+      "clause": "document",
+      "quote": "(clauză absentă din document)",
+      "why": "Fără clauză de denunțare cu preaviz, ieșirea din contract presupune acordul celeilalte părți sau o acțiune în instanță.",
+      "fix": "Adaugă denunțare cu preaviz scris de 30 de zile, fără penalități."
+    },
+    {
+      "rule": "R09",
+      "title": "Cesiune de proprietate intelectuală peste limita livrabilelor",
+      "severity": "medium",
+      "clause": "9.1",
+      "quote": "e de proprietate intelectuala asupra materialelor furnizate, inclusiv creatii viitoare, pe intreaga durata a protectiei legale.",
+      "why": "Cesiunea creațiilor viitoare nu poate fi cuantificată la semnare și poate acoperi know-how care nu are legătură cu proiectul.",
+      "fix": "Limitează cesiunea la livrabilele enumerate în anexă, la plata integrală."
+    },
+    {
+      "rule": "R12",
+      "title": "Cesiune de contract fără acordul celeilalte părți",
+      "severity": "medium",
+      "clause": "10.1",
+      "quote": "10.1 Prestatorul poate cesiona contractul, integral sau partial, fara acordul Clientului.",
+      "why": "Partenerul contractat poate fi înlocuit cu un terț necunoscut, inclusiv un concurent.",
+      "fix": "Cesiune permisă numai cu acordul scris prealabil al celeilalte părți."
+    },
+    {
+      "rule": "R11",
+      "title": "Confidențialitate pe durată nelimitată",
+      "severity": "low",
+      "clause": "7.2",
+      "quote": "7.2 Obligatia de confidentialitate se aplica pe o perioada nelimitata de timp, indiferent de incetarea contractului.",
+      "why": "Obligație veșnică, greu de administrat și de dovedit; durata standard este de 2-5 ani după încetare.",
+      "fix": "Durată de 3 ani după încetare, cu excepții pentru informații publice și cerințe legale."
+    },
+    {
+      "rule": "R13",
+      "title": "Canal de notificări nedefinit",
+      "severity": "low",
+      "clause": "document",
+      "quote": "(clauză absentă din document)",
+      "why": "Fără adresă de e-mail și termen de răspuns, notificările se pot pierde; afectează aplicarea preavizelor și a penalităților.",
+      "fix": "Definește persoana de contact, adresa de e-mail și regula de confirmare în 3 zile lucrătoare."
+    }
+  ]
+}
